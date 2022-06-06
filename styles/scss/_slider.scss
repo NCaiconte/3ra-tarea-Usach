@@ -1,0 +1,43 @@
+@use "variables";
+
+.container2 {
+    position: relative;
+    .slider {
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        position: relative;
+        .slide {
+            scroll-snap-align: start;
+            width: 100%;
+            min-height: 400px;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+          }
+      }
+      .slide-controller {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        bottom: 25%;
+        left: 0%;
+        a {
+            display: flex;
+            border-radius: 20%;
+            border: 2px solid variables.$hightlight;
+            height: 10px;
+            width: 40px;
+          }
+          a:hover {
+            background-color: variables.$hightlight;
+            transition: 0.7s;
+          }
+      }
+  }
