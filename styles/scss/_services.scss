@@ -1,130 +1,124 @@
 @use "variables";
 
-.services{
-    .section-title {
-        padding-bottom: 30px;
-        text-align: center;
-        h2 {
-            font-size: 32px;
-            font-weight: bold;
-            margin: 15px 0px;
-            padding: 15px 0px;
-            position: relative;
-            color: variables.$primary-h2;  /*usar en variable scss*/
-            .section-title p {
-                margin-bottom: 0;
-              }
-          }
-          h2::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 20%;
-            height: 3px;
-            background: variables.$primary-h2-dark;/*usar en variable scss*/
-            bottom: 0;
-            margin-left: 40%;
-            
-          }
+.services {
+  .section-title {
+    padding-bottom: 30px;
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 15px 0px;
+      padding: 15px 0px;
+      position: relative;
+      color: variables.$primary-h2; /*usar en variable scss*/
+      .section-title p {
+        margin-bottom: 0;
       }
-    .row{
-        .icon-box {
-            padding: 20px 15px;
-            position: relative;
-            overflow: hidden;
-            background: variables.$icon-primary;
-            box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
-            transition: all 0.3s ease-in-out;
-            border-radius: 8px;
-            text-align: center;
-            z-index: 1;
-            .icon {
-                margin: 0 auto 30px auto;
-                padding-top: 10px;
-                display: inline-block;
-                text-align: center;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
-                background: variables.$icon-dark;/*usar en variable scss*/
-                transition: all 0.3s ease-in-out;
-                i {
-                    font-size: 36px;
-                    line-height: 1;
-                    color: variables.$icon-primary;
-                  }
-              }
-              .title {
-                font-weight: 700;
-                margin-bottom: 15px;
-                font-size: 18px;
-                a {
-                    color: variables.$primary-dark;/*usar en variable scss*/
-                  }
-              }
-              .description {
-                font-size: 15px;
-                line-height: 24px;
-                margin-bottom: 0;
-                text-align: justify;
-              }
-          }
-          .icon-box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 0;
-            transition: ease-in-out 0.3s;
-            z-index: -1;
-          }
-          .icon-box:hover::before {
-            background: variables.$icon-secondary;/*usar en variable scss*/
-            height: 100%;
-            border-radius: 0px;
-          }
     }
-
+    h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 20%;
+      height: 3px;
+      background: variables.$primary-h2-dark; /*usar en variable scss*/
+      bottom: 0;
+      margin-left: 40%;
+    }
+  }
+  .row {
+    .icon-box {
+      padding: 20px 15px;
+      position: relative;
+      overflow: hidden;
+      background: variables.$icon-primary;
+      box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+      transition: all 0.3s ease-in-out;
+      border-radius: 8px;
+      text-align: center;
+      z-index: 1;
+      .icon {
+        margin: 0 auto 30px auto;
+        padding-top: 10px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: variables.$icon-dark; /*usar en variable scss*/
+        transition: all 0.3s ease-in-out;
+        i {
+          font-size: 36px;
+          line-height: 1;
+          color: variables.$icon-primary;
+        }
+      }
+      .title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+        a {
+          color: variables.$primary-dark; /*usar en variable scss*/
+        }
+      }
+      .description {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 0;
+        text-align: justify;
+      }
+    }
+    .icon-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      transition: ease-in-out 0.3s;
+      z-index: -1;
+    }
+    .icon-box:hover::before {
+      background: variables.$icon-secondary; /*usar en variable scss*/
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
 }
 
 .services {
-    .icon-box:hover {
-        .title {
-            a {
-                color: variables.$icon-primary;/*usar en variable scss*/
-              }
-        }
-        .description{
-            color: variables.$icon-primary;
-        }
-        .icon {
-            background: variables.$icon-primary;/*usar en variable scss*/
-            i {
-                color: variables.$icon-color;/*usar en variable scss*/
-              }
-          }
-            
+  .icon-box:hover {
+    .title {
+      a {
+        color: variables.$icon-primary; /*usar en variable scss*/
+      }
     }
+    .description {
+      color: variables.$icon-primary;
+    }
+    .icon {
+      background: variables.$icon-primary; /*usar en variable scss*/
+      i {
+        color: variables.$icon-color; /*usar en variable scss*/
+      }
+    }
+  }
 }
 
 #footer {
-    background: variables.$icon-primary;/*usar en variable scss*/
-    padding: 24px 0;
-    font-size: 14px;
-    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
-    .copyright {
-        text-align: center;
-      }
+  background: variables.$icon-primary; /*usar en variable scss*/
+  padding: 24px 0;
+  font-size: 14px;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+  .copyright {
+    text-align: center;
   }
- 
- 
+}
 
-  @media (max-width: 768px) {
-    .services {
-        .icon-box::before {
-            bottom: 60%;
-          }
+@media (max-width: 768px) {
+  .services {
+    .icon-box::before {
+      bottom: 60%;
     }
-  
   }
+}

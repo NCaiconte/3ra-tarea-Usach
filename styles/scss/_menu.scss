@@ -1,55 +1,52 @@
 @use "variables";
 
-.container1 nav{
+.container1 nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-between;
+  align-items: center;
+  .menu {
     display: grid;
-    grid-template-columns:repeat(5, auto) ;
-    justify-content: space-between;
-    align-items: center;
-      .menu {
-    display: grid;
-    grid-template-columns:repeat(4, auto) ;
+    grid-template-columns: repeat(4, auto);
     row-gap: 10px;
     min-height: 120px;
     background-color: variables.$primary;
-         .logo {
-            img{
-    height: 100px;
-    align-items: center;
-    padding-inline:10px ;
-            }
-          }
-          nav{
-    display: grid;
-    grid-template-columns:repeat(5, auto) ;
-    justify-content: space-between;
-    align-items: center;
-              a{
-    display: grid;
-    justify-content: space-between;
-    position: relative;
-    color: variables.$primary-dark;
-    font-weight: 700;
-    font-family: inherit;
-    font-size: 20px;
-    text-decoration: none;
-  
-              }
-              a:after{
-              content: "";
-              position: absolute;
-              background-color: variables.$primary-background;
-              height: 3px;
-              width: 0;
-              left: 0;
-              bottom: -10px;
-              transition: 0.3s;
-              text-decoration: none;
-              }
-              a:hover:after{
-              width: 100%;
-              }
-          }
-  
-        }
-  
+    .logo {
+      img {
+        height: 100px;
+        align-items: center;
+        padding-inline: 10px;
+      }
+    }
+    nav {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: grid;
+        justify-content: space-between;
+        position: relative;
+        color: variables.$primary-dark;
+        font-weight: 700;
+        font-family: inherit;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        background-color: variables.$primary-background;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+      a:hover:after {
+        width: 100%;
+      }
+    }
   }
+}
